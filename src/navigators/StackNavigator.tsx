@@ -2,14 +2,13 @@ import React from 'react';
 import { withIAPContext } from 'react-native-iap';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import {
-  ClassSetup,
-  Examples,
-  Products,
-  PurchaseHistory,
-  Subscriptions,
-} from '../screens';
+
 import { AvailablePurchases } from '../screens/AvailablePurchases';
+import { ClassSetup } from '../screens/ClassSetup';
+import { Examples } from '../screens/Examples';
+import { Products } from '../screens/Products';
+import { PurchaseHistory } from '../screens/PurchaseHistory';
+import { Subscriptions } from '../screens/Subscriptions';
 
 export const examples = [
   {
@@ -62,6 +61,9 @@ export type Screens = {
 
 const Stack = createStackNavigator<Screens>();
 
+
+console.log("v============", examples)
+
 export const StackNavigator = () => (
   <Stack.Navigator screenOptions={{ title: 'React Native IAP' }}>
     <Stack.Screen name="Examples" component={Examples} />
@@ -72,8 +74,9 @@ export const StackNavigator = () => (
         name={name}
         component={component}
         options={{
-          title: name,
-          headerBackTitle: 'Examples',
+          headerShown: false
+          // title: name,
+          // headerBackTitle: 'Examples',
         }}
       />
     ))}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {
   Alert,
+  Button,
   EmitterSubscription,
   ScrollView,
   StyleSheet,
@@ -29,14 +30,14 @@ import {
   SubscriptionPurchase,
 } from 'react-native-iap';
 
-import { Box, Button, Heading, Row } from '../components';
-import {
-  constants,
-  contentContainerStyle,
-  errorLog,
-  isAndroid,
-  theme,
-} from '../utils';
+ 
+import { Box } from '../components/Box';
+import { Heading } from '../components/Heading';
+import { Row } from '../components/Row';
+import { isAndroid } from 'react-native-iap/src/internal';
+import { constants } from '../utils/constants';
+import { errorLog } from '../utils/logs';
+import { contentContainerStyle, theme } from '../utils/theme';
 
 interface State {
   productList: (Product | Subscription)[];

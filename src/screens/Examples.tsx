@@ -13,8 +13,8 @@ import type { StackNavigationProp } from '@react-navigation/stack';
 import lowerCase from 'lodash/lowerCase';
 import upperFirst from 'lodash/upperFirst';
 
-import { examples, Screens } from '../navigators';
-import { colors, theme } from '../utils';
+import { Screens, examples } from '../navigators/StackNavigator';
+import { colors, theme } from '../utils/theme';
 
 interface SectionData {
   name: keyof Screens;

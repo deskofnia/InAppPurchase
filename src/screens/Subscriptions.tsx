@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Button, ScrollView, StyleSheet, Text, View } from 'react-native';
 import {
   isIosStorekit2,
   PurchaseError,
@@ -7,15 +7,15 @@ import {
   useIAP,
 } from 'react-native-iap';
 
-import { Box, Button, Heading, Row, State } from '../components';
-import {
-  constants,
-  contentContainerStyle,
-  errorLog,
-  isAmazon,
-  isIos,
-  isPlay,
-} from '../utils';
+
+import { Box } from '../components/Box';
+import { Heading } from '../components/Heading';
+import { Row } from '../components/Row';
+import { State } from '../components/State';
+import { isPlay, isAmazon, isIos } from 'react-native-iap/src/internal';
+import { constants } from '../utils/constants';
+import { errorLog } from '../utils/logs';
+import { contentContainerStyle } from '../utils/theme';
 
 export const Subscriptions = () => {
   const {

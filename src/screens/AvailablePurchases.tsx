@@ -1,9 +1,13 @@
 import React from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { Button, ScrollView, StyleSheet, View } from 'react-native';
 import { useIAP } from 'react-native-iap';
 
-import { Box, Button, Heading, Row, State } from '../components';
-import { contentContainerStyle, errorLog } from '../utils';
+import { Box } from '../components/Box';
+import { Heading } from '../components/Heading';
+import { Row } from '../components/Row';
+import { State } from '../components/State';
+import { errorLog } from '../utils/logs';
+import { contentContainerStyle } from '../utils/theme';
 
 export const AvailablePurchases = () => {
   const { connected, availablePurchases, getAvailablePurchases } = useIAP();

@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 import { StyleSheet, Text, View, ViewStyle } from 'react-native';
 import camelCase from 'lodash/camelCase';
+import { theme } from '../utils/theme';
 
-import { theme } from '../utils';
 
 interface RowField {
   label: string;

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-import { theme } from '../utils';
 
 import { Box } from './Box';
+import { theme } from '../utils/theme';
 
 interface StateProps {
   connected: boolean;

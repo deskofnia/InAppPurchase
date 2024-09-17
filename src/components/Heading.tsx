@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { theme, colors, borderRadius } from '../utils/theme';
 
-import { borderRadius, colors, theme } from '../utils';
 
 interface HeadingProps {
   copy: string;

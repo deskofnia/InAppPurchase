@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { View } from 'react-native';
+import { theme } from '../utils/theme';
 
-import { theme } from '../utils';
 
 interface BoxProps {
   children: ReactNode;

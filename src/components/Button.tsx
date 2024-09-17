@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button as RNButton, StyleSheet, View } from 'react-native';
+import { colors, borderRadius } from '../utils/theme';
 
-import { borderRadius, colors } from '../utils';
 
 interface ButtonProps {
   title: string;
