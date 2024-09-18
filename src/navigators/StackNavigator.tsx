@@ -62,8 +62,6 @@ export type Screens = {
 const Stack = createStackNavigator<Screens>();
 
 
-console.log("v============", examples)
-
 export const StackNavigator = () => (
   <Stack.Navigator screenOptions={{ title: 'React Native IAP' }}>
     <Stack.Screen name="Examples" component={Examples} />
@@ -74,9 +72,8 @@ export const StackNavigator = () => (
         name={name}
         component={component}
         options={{
-          headerShown: false
-          // title: name,
-          // headerBackTitle: 'Examples',
+          title: name,
+          headerBackTitle: 'Examples',
         }}
       />
     ))}
