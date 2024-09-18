@@ -14,7 +14,6 @@ This repository provides a comprehensive guide and implementation for handling *
 
 - **React Native**: For building the cross-platform app.
 - **React Native IAP**: A powerful library to manage in-app purchases.
-- **Firebase**: (Optional) for backend services such as analytics, receipt validation, and user management.
   
 ## 📖 Table of Contents
 
