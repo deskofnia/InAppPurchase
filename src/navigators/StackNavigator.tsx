@@ -9,6 +9,7 @@ import { Examples } from '../screens/Examples';
 import { Products } from '../screens/Products';
 import { PurchaseHistory } from '../screens/PurchaseHistory';
 import { Subscriptions } from '../screens/Subscriptions';
+import Home from '../modules/Home';
 
 export const examples = [
   {
@@ -27,13 +28,6 @@ export const examples = [
     emoji: '💳',
   },
   {
-    name: 'PurchaseHistory',
-    component: withIAPContext(PurchaseHistory),
-    section: 'Context',
-    color: '#c241b3',
-    emoji: '📄',
-  },
-  {
     name: 'AvailablePurchases',
     component: withIAPContext(AvailablePurchases),
     section: 'Context',
@@ -41,12 +35,28 @@ export const examples = [
     emoji: '🧾',
   },
   {
+    name: 'PurchaseHistory',
+    component: withIAPContext(PurchaseHistory),
+    section: 'Context',
+    color: '#c241b3',
+    emoji: '📄',
+  },
+
+  {
+    name: 'PremiumMusic',
+    component: Home,
+    section: 'Subscription',
+    color: '#b52240',
+    emoji: '🎧',
+  },
+  {
     name: 'ClassSetup',
     component: ClassSetup,
     section: 'Others',
-    color: '#b947d3',
-    emoji: '',
+    color: '#0cb3b3',
+    emoji: '©️',
   },
+
 ] as const;
 
 export type Screens = {
@@ -57,6 +67,7 @@ export type Screens = {
   AvailablePurchases: undefined;
   Listeners: undefined;
   ClassSetup: undefined;
+  PremiumMusic: undefined;
 };
 
 const Stack = createStackNavigator<Screens>();

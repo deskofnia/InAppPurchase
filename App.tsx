@@ -12,10 +12,9 @@ import { IndexApp } from './src';
 function App(): React.JSX.Element {
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      {/* <GestureHandlerRootView style={{ flex: 1 }}> */}
-      {/* <Home /> */}
-      <IndexApp />
-      {/* </GestureHandlerRootView> */}
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <IndexApp />
+      </GestureHandlerRootView>
     </SafeAreaView>
   );
 }
