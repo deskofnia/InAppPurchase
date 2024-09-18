@@ -5,7 +5,6 @@ import {
 
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { withIAPContext } from 'react-native-iap';
-import Home from './src/modules/Home';
 import { IndexApp } from './src';
 
 
